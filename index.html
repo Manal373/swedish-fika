@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swedish Fika - Hem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">Swedish Fika</a>
+      <nav>
+        <ul>
+        <li><a href="index.html" class="active">Hem</a></li>
+        <li><a href="meny.html">Meny</a></li>
+        <li><a href="om-oss.html">Om oss</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Välkommen till Swedish Fika</h1>
+        <p>Ta en paus, en kopp kaffe och något gott – precis som i Sverige.</p>
+        <a href="meny.html" class="knapp">Se vår meny</a>
+      </div>
+    </section>
+
+    <section class="container center">
+      <h2>Vad är fika?</h2>
+      <p>Fika är en svensk tradition. Man tar en paus, dricker kaffe och äter något gott tillsammans med vänner eller familj.
+      Hos oss kan du fika i lugn och ro i en mysig miljö med blommor och rosa detaljer.</p>
+    </section>
+
+    <section class="rosa">
+      <div class="container">
+        <h2 class="center">Populärt just nu</h2>
+        <div class="kort-grid">
+        <article class="kort">
+          <img src="bilder/kanelbulle.webp" alt="Kanelbulle" width="400" height="400" loading="lazy">
+          <div class="kort-text">
+            <h3>Kanelbulle</h3>
+            <p>Den svenska klassikern med kanel och pärlsocker.</p>
+            <p class="pris">35 kr</p>
+          </div>
+        </article>
+        <article class="kort">
+          <img src="bilder/semla.webp" alt="Semla" width="400" height="400" loading="lazy">
+          <div class="kort-text">
+            <h3>Semla</h3>
+            <p>Vetebulle med mandelmassa och vispgrädde.</p>
+            <p class="pris">49 kr</p>
+          </div>
+        </article>
+        <article class="kort">
+          <img src="bilder/marangtarta.webp" alt="Marängtårta" width="400" height="400" loading="lazy">
+          <div class="kort-text">
+            <h3>Marängtårta</h3>
+            <p>Maräng, grädde och färska bär.</p>
+            <p class="pris">55 kr</p>
+          </div>
+        </article>
+        <article class="kort">
+          <img src="bilder/chokladboll.webp" alt="Chokladboll" width="400" height="400" loading="lazy">
+          <div class="kort-text">
+            <h3>Chokladboll</h3>
+            <p>Havregryn, kakao och smör.</p>
+            <p class="pris">25 kr</p>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="center">Bilder från kaféet</h2>
+
+      <div class="bildspel">
+        <div class="slide">
+          <img src="bilder/bildspel-1.webp" alt="Kafé med rosa stolar och runda bord" width="600" height="400">
+          <p>Vårt mysiga kafé</p>
+        </div>
+        <div class="slide">
+          <img src="bilder/bildspel-2.webp" alt="Nybakade kanelbullar med pärlsocker" width="600" height="400" loading="lazy">
+          <p>Nybakat varje morgon</p>
+        </div>
+        <div class="slide">
+          <img src="bilder/bildspel-3.webp" alt="En semla med grädde" width="600" height="400" loading="lazy">
+          <p>Semlor på vintern</p>
+        </div>
+        <div class="slide">
+          <img src="bilder/bildspel-4.webp" alt="En kardemummabulle på ett fat" width="600" height="400" loading="lazy">
+          <p>Kaffe och bulle – den perfekta fikan</p>
+        </div>
+
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <section>
+        <h3>Swedish Fika</h3>
+        <p>Kaffe, bullar och kakor på svenskt vis.</p>
+      </section>
+      <section>
+        <h3>Öppettider</h3>
+        <p>Mån–fre: 07.30–18.00<br>
+        Lör–sön: 09.00–17.00</p>
+      </section>
+      <section>
+        <h3>Kontakt</h3>
+        <p>Telefon: +46712345678<br>
+        E-post: <a href="mailto:hej@swedishfika.se">hej@swedishfika.se</a><br>
+        <a href="integritetspolicy.html">Integritetspolicy</a></p>
+      </section>
+    </div>
+    <p class="made-by">Skapad av Manal Alshammaa</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

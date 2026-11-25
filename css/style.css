@@ -1,0 +1,352 @@
+/* Swedish Fika - stilmall */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdf6f0;
+  color: #4a3438;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #7a3d4d;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #b05a6e;
+}
+
+/* ===== Header och meny (flexbox) ===== */
+
+header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #f4c9cf;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 40px;
+  color: #b05a6e;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a3438;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background-color: #fbe3e6;
+}
+
+nav a.active {
+  background-color: #e8a0ae;
+  color: white;
+}
+
+/* ===== Stor bild högst upp ===== */
+
+.hero {
+  height: 450px;
+  background-image: url("../bilder/hero.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 25px 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hero-text h1 {
+  margin: 0 0 10px 0;
+  font-size: 40px;
+}
+
+.hero-text p {
+  margin: 0;
+}
+
+.knapp {
+  display: inline-block;
+  background-color: #b05a6e;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.knapp:hover {
+  background-color: #7a3d4d;
+}
+
+/* ===== Vanliga sektioner ===== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.rosa {
+  background-color: #fbe3e6;
+}
+
+.sidrubrik {
+  background-color: #fbe3e6;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* ===== Kort med produkter (grid) ===== */
+
+.kort-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.kort {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.kort img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.kort-text {
+  padding: 15px;
+}
+
+.kort-text h3 {
+  margin: 0 0 5px 0;
+}
+
+.kort-text p {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+}
+
+.pris {
+  font-weight: bold;
+  color: #b05a6e;
+}
+
+/* ===== Tre rutor ===== */
+
+.tre-rutor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.ruta {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ===== Två kolumner (om oss) ===== */
+
+.tva-kolumner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.tva-kolumner img {
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* ===== Bildspel ===== */
+
+.bildspel {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  display: block;
+}
+
+.slide p {
+  text-align: center;
+  font-style: italic;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 180px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  font-size: 24px;
+  padding: 8px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: white;
+}
+
+/* ===== Meny-lista ===== */
+
+.meny-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.meny-lista li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #e8a0ae;
+  padding: 8px 0;
+}
+
+/* ===== Kontakt ===== */
+
+table {
+  width: 100%;
+}
+
+td {
+  padding: 5px 0;
+}
+
+/* ===== Footer ===== */
+
+footer {
+  background-color: #7a3d4d;
+  color: white;
+  padding: 30px 20px 10px 20px;
+}
+
+footer a {
+  color: white;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+footer h3 {
+  color: white;
+}
+
+.made-by {
+  text-align: center;
+  border-top: 1px solid #a86677;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+/* ===== Mobil ===== */
+
+@media (max-width: 800px) {
+  .kort-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tre-rutor,
+  .tva-kolumner,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .slide img {
+    height: 280px;
+  }
+
+  .prev,
+  .next {
+    top: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .kort-grid {
+    grid-template-columns: 1fr;
+  }
+}
